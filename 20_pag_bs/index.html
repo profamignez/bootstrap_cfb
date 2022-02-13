@@ -12,18 +12,19 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
        <title>Site Bootstrap</Margin-auto></title>
 </head>
+
 <style>
     .bg-AzulEscuro  {
         background-color: #046;
     }
-    .fundoCinzaClaro {
+    .bg-CinzaClaro {
         background-color: #DDD;
     }
 
 </style>
 <body>
 
-     <!-- Heading do Site -->
+     <!-- Heading -->
      <header header class="p-3 bg-primary text-white d-flex">
         <img src="perfil1-112x112.png" alt="Perfil">
          <h3 class="m-auto align-self-center">Modelo de Site Bootstrap</h3>
@@ -45,7 +46,90 @@
          </div>
      </nav>
 
-     
-     
+     <!-- Container -->
+     <main class="container mt-5">
+         <div class="row">
+             <div class="col-sm-8">
+                <div class="rounded p-2 mb-3 bg-CinzaClaro">
+                    <h2>Título do Conteúdo</h2>
+                    <h5>Descrição do conteúdo</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi doloribus error eveniet ratione, odit minima recusandae neque at atque perferendis eius nulla velit delectus. Distinctio necessitatibus exercitationem ea quidem velit!</p>
+                </div>
+                <div class="rounded p-2 mb-3 bg-CinzaClaro">
+                    <h2>Título do Conteúdo</h2>
+                    <h5>Descrição do conteúdo</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi doloribus error eveniet ratione, odit minima recusandae neque at atque perferendis eius nulla velit delectus. Distinctio necessitatibus exercitationem ea quidem velit!</p>
+                </div>
+                <div class="rounded p-2 mb-3 bg-CinzaClaro">
+                    <h2>Título do Conteúdo</h2>
+                    <h5>Descrição do conteúdo</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi doloribus error eveniet ratione, odit minima recusandae neque at atque perferendis eius nulla velit delectus. Distinctio necessitatibus exercitationem ea quidem velit!</p>
+                </div>
+                <div class="rounded p-2 mb-3 bg-CinzaClaro">
+                    <h2>Título do Conteúdo</h2>
+                    <h5>Descrição do conteúdo</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi doloribus error eveniet ratione, odit minima recusandae neque at atque perferendis eius nulla velit delectus. Distinctio necessitatibus exercitationem ea quidem velit!</p>
+                </div>
+             </div>
+
+             <!-- Aside -->
+             <aside class="col-sm-4">
+                 <h2>Sobre</h2>
+                 <h5>Sobre o CFB Cursos</h5>
+                 <p>somos um canal do Youtube voltado para cursos de programação em geral.</p>
+                 <h3 class="mt-4">Alguns Cursos</h3>
+                 <ul class="nav nav-pills flex-column">
+                     <li class="nav-item">
+                         <a href="#" class="nav-link" id="n1" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">C++</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#" class="nav-link" id="n2" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">C#</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n3" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Javascript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n4" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n5" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n6" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n7" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n8" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">React</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n9" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">React-Native</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n10" onmouseover="marcar(this.id)"onmouseout="marcar(this.id)">PHP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n11" onmouseover="marcar(this.id)"onmouseout="marcar(this.id)">Arduino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n12" onmouseover="marcar(this.id)"onmouseout="marcar(this.id)">E mais alguns outros...</a>
+                    </li>
+                 </ul>
+             </div>
+         </aside>
+     </main>
+
+     <!-- Footer -->
+     <footer class="mt-5 p-4 bg-AzulEscuro text-white text-center">
+         <p>CFB Cursos | youtube.com/cfbcursos | cfbcursos.com.br</p>
+     </footer>
+
+     <script>
+         const marcar=(obj)=>{
+             document.getElementById(obj).classList.toggle("active");
+         }
+     </script>
+          
 </body>
 </html>
